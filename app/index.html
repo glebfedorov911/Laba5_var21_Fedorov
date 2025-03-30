@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Анимация Букв</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/jquery-3.7.1.min.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+<div class="container">
+    <h1>Анимация Букв</h1>
+
+    <div class="animation-area">
+        <div class="figure" id="square"><p id="letter" class="letter">A</p></div>
+    </div>
+
+    <div id="user-custom-settings">
+        <label for="user-colors">Цвета (в формате #FFFFFF #000000)</label>
+        <input type="text" id="user-colors" placeholder="Например: #6c5ce7 #fd79a8 #00b894">
+
+        <label for="minimum-size">Минимальный размер (10-150)</label>
+        <input type="number" id="minimum-size" placeholder="10" min="10" max="150">
+
+        <label for="maximum-size">Максимальный размер (10-150)</label>
+        <input type="number" id="maximum-size" placeholder="150" min="10" max="150">
+
+        <label for="time">Интервал смены (с)</label>
+        <input type="text" id="time" >
+
+        <input id="start" type="button" value="Запустить">
+    </div>
+</div>
+</body>
+</html>
