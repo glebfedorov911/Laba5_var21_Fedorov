@@ -115,7 +115,6 @@ function validateColors() {
         return true;
     }
 
-    console.log(userColors)
     if (userColors.split(" ").length > 20) {
         alert('Не больше 20 цветов!');
         return false;
@@ -126,7 +125,7 @@ function validateColors() {
             return false;
         }
         for (let i = 0; i < 7; i++) {
-            if (DEFAULT_SEQUENCE_COLOR.indexOf(color[i]) == -1 && color[i] != '#') {
+            if (DEFAULT_SEQUENCE_COLOR.indexOf(color[i].toUpperCase()) == -1 && color[i] != '#') {
                 alert('Цвет не в формате HEX!!!');
                 return false;
             }
